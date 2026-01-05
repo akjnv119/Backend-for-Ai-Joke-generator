@@ -21,7 +21,7 @@ app.post("/api/joke", async (req, res) => {
 
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
-      contents: `Tell me a short funny ${category} programming joke`,
+      contents: `Tell me a short funny ${category} .`,
     });
 
     res.json({
